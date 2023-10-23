@@ -1,3 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 body {
-  padding: 0;
+  margin: 0;
+}
+
+.column-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.column-body {
+  display: flex;
+  width: 936px;
+  height: 520px;
+  border-radius: 8px;
+}
+
+.column-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 33.33333%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 52px;
+}
+
+.left-column {
+  background-color: #e28525;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.middle-column {
+  background-color: #016972;
+}
+
+.right-column {
+  background-color: #00403f;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.car-image-container {
+  margin-bottom: 32px;
+}
+
+.column-title {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 42px;
+  margin-bottom: 24px;
+  color: hsl(0, 0%, 95%);
+}
+
+.column-subtitle {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.column-button {
+  position: absolute;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  width: 144px;
+  height: 48px;
+  border: none;
+  bottom: 52px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.left-button {
+  color: #e28525
+}
+
+.middle-button {
+  color: #016972;
+}
+
+.right-button {
+  color: #00403f;
+}
+
+@media (max-width: 1000px) {
+  .column-body {
+    transform: scale(.8);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .column-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .column-body {
+    transform: scale(1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 24px;
+  }
+
+  .column-section {
+    width: 100%;
+  }
+
+  .column-subtitle {
+    margin-bottom: 80px;
+  }
+
+  .left-column {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+  }
+
+  .right-column {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+  }
 }
